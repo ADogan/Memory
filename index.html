@@ -1,0 +1,67 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="utf-8">
+  <title> Memory game - Assignment web technologies</title>
+
+<link rel="stylesheet" type="text/css" href="css/stijl.css" media="screen" />
+</head><body>
+<center>
+
+<div id="wrapper">
+
+<header>
+
+    <h1 id="title" class="title">Memory Time!</h1>
+    <h2 id="message">Click on a card!</h2>
+    <a href="#" onClick="new_round()" id="new_round_button"> New Round</a>
+
+
+  <hgroup id="info">
+    <div id="clicks">Number of c l i c k s: 0</div>
+    <div id="points">Number of p o i n t s: 0</div>
+</hgroup>
+
+    <div id="game_menu">
+    </div>
+</header>
+
+  <div id="board">
+
+      <div id="1" class="card"></div>
+      <div id="2" class="card"></div>
+      <div id="3" class="card"></div>
+      <div id="4" class="card"></div>
+      <div id="5" class="card"></div>
+      <div id="6" class="card"></div>
+      <div id="7" class="card"></div>
+      <div id="8" class="card"></div>
+      <div id="9" class="card"></div>
+      <div id="10" class="card"></div>
+      <div id="11" class="card"></div>
+      <div id="12" class="card"></div>
+      <div id="13" class="card"></div>
+      <div id="14" class="card"></div>
+      <div id="15" class="card"></div>
+      <div id="16" class="card"></div>
+      <div id="17" class="card"></div>
+      <div id="18" class="card"></div>
+      <div id="19" class="card"></div>
+      <div id="20" class="card"></div>
+      <div id="21" class="card"></div>
+      <div id="22" class="card"></div>
+      <div id="23" class="card"></div>
+      <div id="24" class="card"></div>
+
+  </div><!-- board -->
+
+<footer>
+      <a href="#" id="rotation_mode" onClick="flip_rotation_mode()"> Rotation on!</a>
+<canvas id="footer_canvas" height="100px" width="600px" onClick="draw_on_canvas()">
+  </canvas>
+</footer>
+</div><!-- wrapper -->
+</center>
+<p onclick="$(this).hide();">Dont click me!</p>
+
+<script src="js/jquery-1.8.2.js" type="text/javascript"></script>
+<script src="js/script.js" type="text/javascript"></script>
+  </body></html>
